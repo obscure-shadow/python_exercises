@@ -1,6 +1,7 @@
 # 1. Create a class that contains information about employees of a company
 #    define methods to get/set employee name, job title, and start date.
 class Employee():
+    super()__init__(self,company_name, date_founded)
     def __init__(self, name, job_title, start_date):
         self.name = name
         self.job_title = job_title
@@ -20,7 +21,6 @@ class Company(object):
         """Returns the name of the company"""
         return self.company_name
 
-    def set_new_employee(self, employee):
 
 
 
