@@ -197,6 +197,10 @@ three_letters_words = [ word.title() for word in words if len(word) == 3 ]
     ```
 2. With the resulting list, use a list comprehension to build a new list that contains each number squared. For example, if the original list is `[2, 5]`, the final list will be `[4, 25]`.
 
+#fib
+
+just having a little fun with the fibonacci sequence...
+
 
 # lightningPy
 
