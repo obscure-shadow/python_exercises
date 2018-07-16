@@ -62,7 +62,7 @@ for tickers in purchases:
         new_new_stockdict[tickers[0]] = [(tickers[1],tickers[2],tickers[3])]
 
 # for key, socks in new_new_stockdict
-
+print(new_new_stockdict)
 
 # stockDict = { 'GE': 'General Electric',
 #  'MSFT': 'Microsoft',
@@ -104,38 +104,38 @@ for tickers in purchases:
 
 
 
-# portfolio = dict()
-# for purchase in purchases:
-#     ticker = purchase[0]
+portfolio = dict()
+for purchase in purchases:
+    ticker = purchase[0]
 
-#     full_company_name = stockDict[ticker]
-#     number_of_shares = purchase[1]
-#     purchase_price = purchase[3]
-#     full_purchase_price = number_of_shares * purchase_price
+    full_company_name = stockDict[ticker]
+    number_of_shares = purchase[1]
+    purchase_price = purchase[3]
+    full_purchase_price = number_of_shares * purchase_price
 
-#     minimal_purchase = (purchase[1], purchase[2], purchase[3])
+    minimal_purchase = (purchase[1], purchase[2], purchase[3])
 
-#     try:
-#         portfolio[ticker].append(purchase) # Append the purchase to the ticker list
-#     except KeyError:
-#         portfolio[ticker] = list() # If the key doesn't exist yet, create it
-#         portfolio[ticker].append(purchase)
-
-
-#     print("I purchased {} stock for ${}".format(full_company_name, full_purchase_price))
-
-# print(portfolio)
+    try:
+        portfolio[ticker].append(purchase) # Append the purchase to the ticker list
+    except KeyError:
+        portfolio[ticker] = list() # If the key doesn't exist yet, create it
+        portfolio[ticker].append(purchase)
 
 
+    print("I purchased {} stock for ${}".format(full_company_name, full_purchase_price))
+
+print(portfolio)
 
 
 
 
 
-# for ticker,purchases in portfolio.items():
-#     print("------ {} ------".format(ticker))
-#     total_portfolio_stock_value = 0
-#     for purchase in purchases:
-#         total_portfolio_stock_value += purchase[1] * purchase[3]
-#         print("    {}".format(purchase))
-#     print("Total value of stock in portfolio: ${}\n\n".format(total_portfolio_stock_value))
+
+
+for ticker,purchases in portfolio.items():
+    print("------ {} ------".format(ticker))
+    total_portfolio_stock_value = 0
+    for purchase in purchases:
+        total_portfolio_stock_value += purchase[1] * purchase[3]
+        print("    {}".format(purchase))
+    print("Total value of stock in portfolio: ${}\n\n".format(total_portfolio_stock_value))

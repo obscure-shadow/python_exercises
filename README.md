@@ -121,6 +121,32 @@ Tuples are like lists, but are immutable. They can't be modified once defined. H
 3. Consider the concept of [aggregation](../FND_11_INHERIT_COMPOSE_AGGREGATE.md#aggregation), and modify the `Company` class so that you assign employees to a company.
 4. Create a company, and three employees, and then assign the employees to the company.
 
+
+# The Family Dictionary
+
+## Instructions
+
+1. Define a dictionary that contains information about several members of your family. Use the following example as a template.
+    ```
+    my_family = {
+        'sister': {
+            'name': 'Krista',
+            'age': 42
+        },
+        'mother': {
+            'name': 'Cathie',
+            'age': 70
+        }
+    }
+    ```
+2. Using a dictionary comprehension, produce output that looks like the following example.
+    ```
+    Krista is my sister and is 42 years old
+    ```
+
+    > **Helpful hint:** To convert an integer into a string in Python, it's `str(integer_value)`
+
+
 # lightningPy
 
 lightning exercise 1
